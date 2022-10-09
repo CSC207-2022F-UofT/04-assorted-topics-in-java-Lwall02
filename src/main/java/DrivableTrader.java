@@ -37,7 +37,7 @@ public class DrivableTrader<D> extends Trader<D>{
             return obj_price;
         }
 
-        return obj_price - 1;
+        return -1;
     }
 
 }
