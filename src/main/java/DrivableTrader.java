@@ -34,8 +34,10 @@ public class DrivableTrader<D> extends Trader<D>{
 
         if (item instanceof Drivable)   {
             obj_price += ((Drivable) item).getMaxSpeed();
+            return obj_price;
         }
-        return obj_price;
+
+        return obj_price - 1;
     }
 
 }
